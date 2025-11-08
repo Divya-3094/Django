@@ -17,7 +17,7 @@ def sample1(request):
 def dynamicResponse(request):
     name=request.GET.get("name",'')
     city=request.GET.get("city","hyderabad")
-    return HttpResponse(f"Hello {name} from{city}")
+    return HttpResponse(f"Hello {name} from {city}")
 
 def addition(request):
     num1=request.GET.get("num1",'')
